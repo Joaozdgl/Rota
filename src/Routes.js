@@ -3,6 +3,6 @@ const controlers= require('./controlers/recursos');
 
 const routes = express.Router();
 
-routes.get('/',controler.raiz);
+routes.get('/',controlers.raiz);
 
 module.exports = routes;
