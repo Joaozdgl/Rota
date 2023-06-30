@@ -1,4 +1,11 @@
-const express = require('express')
-const app = require
+const express = require('express');
+const routes = require('./src/controlers/routes');
 
-app.listen(1325, () => console.log('Servidor rodando na porta 1325'));
+const app = express();
+app.use(routes);
+
+app.listen('1325',()=>{
+    console.log('servidor on na porta 1325');
+})
+
+
